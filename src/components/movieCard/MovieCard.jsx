@@ -1,15 +1,15 @@
 import './style.scss'
 
-export default function MovieCard({ backdrop_path, title, release_date, genre_ids, overview }) {
+export default function MovieCard({ backdropPath, title, releaseDate, genreIds, overview }) {
   return (
     <div className={'movie-card'}>
       {/* <img src="" alt="" /> */}
-      <span>backdrop_path: {backdrop_path}</span>
-      <div>
-        <span>title: {title}</span>
-        <span>release_date: {release_date}</span>
-        <span>genre_ids: {genre_ids}</span>
-        <span>overview: {overview}</span>
+      <span className="movie-card__img">backdrop_path: {backdropPath}</span>
+      <div className="movie-card__info-wrapper">
+        <p className="movie-card__title">title: {title}</p>
+        <p className="movie-card__date">release_date: {releaseDate}</p>
+        <p className="movie-card__genres">genre_ids: {genreIds}</p>
+        <p className="movie-card__overview">overview: {overview}</p>
       </div>
     </div>
   )
